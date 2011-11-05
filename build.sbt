@@ -12,7 +12,7 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
   "junit" % "junit" % "4.8" % "test",
   "org.scalatest" % "scalatest_2.9.0" % "1.6.1" % "test",
-  "org.eclipse.jetty" % "jetty-webapp" % "8.0.4.v20111024" % "test"
+  "org.eclipse.jetty" % "jetty-webapp" % "7.4.5.v20110725" % "test"
 )
 
 //Main
