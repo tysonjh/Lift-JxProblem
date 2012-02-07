@@ -1,4 +1,4 @@
-name := "lift-sbt-template"
+name := "barkada"
 
 version := "1.0"
 
