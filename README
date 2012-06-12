@@ -1,2 +1,7 @@
-This file was created by IntelliJ IDEA 10.5.2 for binding GitHub repository
-This file was modified by IntelliJ IDEA 10.5.2 for binding GitHub repository
+Sample code for Lift
+
+How to run:
+    1. ./sbt
+    2. container:start
+    3. http://localhost:8080
+

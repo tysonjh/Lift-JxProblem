@@ -1,0 +1,12 @@
+<div id="main" class="lift:surround?with=default;at=content">
+    <div lift="comet?type=HelloComet;name=hello">
+        <button id="btnHello" value="Hello" type="button">Hello Button</button>
+        <span id="msg">id_here</span>
+    </div>
+
+    <lift:comet type="Clock" name="Other">
+        Current Time: <clk:time>Missing Clock</clk:time>
+        <clk:tick />
+    </lift:comet>
+</div>
+

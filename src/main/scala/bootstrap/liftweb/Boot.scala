@@ -1,12 +1,10 @@
 package bootstrap.liftweb
 
-import net.liftweb._
-import util._
+import net.liftweb.sitemap.{Loc, Menu, SiteMap}
+import net.liftweb.sitemap.Loc.Link
+import net.liftweb.common.Full
+import net.liftweb.http.{Html5Properties, Req, LiftRules}
 
-import common._
-import http._
-import sitemap._
-import Loc._
 
 /**
  * A class that's instantiated early and run.  It allows the application
@@ -21,7 +19,9 @@ class Boot {
     // Build SiteMap
     def sitemap = SiteMap(
       Menu.i("Home") / "index", // the simple way to declare a menu
-
+      Menu.i("Hello World") / "HelloWorld",
+      Menu.i("Hello Comet") / "cometHello",
+      Menu.i("World Comet") / "cometWorld",
       // more complex because this menu allows anything in the
       // /static path to be visible
       Menu(Loc("Static", Link(List("static"), true, "/static/index"), "Static Content")))
